@@ -1,6 +1,7 @@
 package restassured.gorestapi;
 
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
@@ -10,7 +11,7 @@ public class BaseAPI {
 	
 	private String baseurl = Config.get("baseurl");
 	
-	@BeforeClass
+	@BeforeSuite
 	public void setUpBaseUrl() {
 		RestAssured.baseURI = baseurl;
 	}

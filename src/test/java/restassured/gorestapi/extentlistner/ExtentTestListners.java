@@ -17,10 +17,11 @@ public class ExtentTestListners implements ITestListener {
 	 private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
 	 
 	 @Override
-	    public void onTestStart(ITestResult result) {
-	        ExtentTest extentTest = extentReports.createTest(result.getMethod().getMethodName());
-	        test.set(extentTest);
-	    }
+	 public void onTestStart(ITestResult result) {
+	     System.out.println(">>> onTestStart() called for: " + result.getMethod().getMethodName());
+	     ExtentTest extentTest = extentReports.createTest(result.getMethod().getMethodName());
+	     test.set(extentTest);
+	 }
 
 	    @Override
 	    public void onTestSuccess(ITestResult result) {

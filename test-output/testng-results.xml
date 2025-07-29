@@ -1,37 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-29T11:18:28 IST" name="Suite" finished-at="2025-07-29T11:18:35 IST" duration-ms="6207">
+  <suite started-at="2025-07-29T12:25:07 IST" name="Suite" finished-at="2025-07-29T12:25:13 IST" duration-ms="6006">
     <groups>
     </groups>
-    <test started-at="2025-07-29T11:18:28 IST" name="Test" finished-at="2025-07-29T11:18:35 IST" duration-ms="6207">
+    <test started-at="2025-07-29T12:25:07 IST" name="Test" finished-at="2025-07-29T12:25:13 IST" duration-ms="6006">
       <class name="restassured.gorestapi.client.GetUsers">
-        <test-method is-config="true" signature="setUpBaseUrl()[pri:0, instance:restassured.gorestapi.client.GetUsers@20bd8be5]" started-at="2025-07-29T11:18:28 IST" name="setUpBaseUrl" finished-at="2025-07-29T11:18:29 IST" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="setUpBaseUrl()[pri:0, instance:restassured.gorestapi.client.GetUsers@4ee203eb]" started-at="2025-07-29T12:25:07 IST" name="setUpBaseUrl" finished-at="2025-07-29T12:25:07 IST" duration-ms="217" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBaseUrl -->
-        <test-method signature="getUserList()[pri:0, instance:restassured.gorestapi.client.GetUsers@20bd8be5]" started-at="2025-07-29T11:18:29 IST" name="getUserList" finished-at="2025-07-29T11:18:31 IST" duration-ms="2691" status="PASS">
+        <test-method signature="getUserList()[pri:0, instance:restassured.gorestapi.client.GetUsers@4ee203eb]" started-at="2025-07-29T12:25:07 IST" name="getUserList" finished-at="2025-07-29T12:25:09 IST" duration-ms="1940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserList -->
       </class> <!-- restassured.gorestapi.client.GetUsers -->
       <class name="restassured.gorestapi.client.GetUser">
-        <test-method signature="getUserDetails()[pri:0, instance:restassured.gorestapi.client.GetUser@4ee203eb]" started-at="2025-07-29T11:18:31 IST" name="getUserDetails" finished-at="2025-07-29T11:18:34 IST" duration-ms="2217" status="PASS">
+        <test-method signature="getUserDetails()[pri:0, instance:restassured.gorestapi.client.GetUser@41f69e84]" started-at="2025-07-29T12:25:09 IST" name="getUserDetails" finished-at="2025-07-29T12:25:11 IST" duration-ms="2302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserDetails -->
-        <test-method is-config="true" signature="setUpBaseUrl()[pri:0, instance:restassured.gorestapi.client.GetUser@4ee203eb]" started-at="2025-07-29T11:18:31 IST" name="setUpBaseUrl" finished-at="2025-07-29T11:18:31 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBaseUrl -->
       </class> <!-- restassured.gorestapi.client.GetUser -->
-      <class name="restassured.gorestapi.client.CreateUser">
-        <test-method is-config="true" signature="setUpBaseUrl()[pri:0, instance:restassured.gorestapi.client.CreateUser@1a5a4e19]" started-at="2025-07-29T11:18:34 IST" name="setUpBaseUrl" finished-at="2025-07-29T11:18:34 IST" duration-ms="0" status="PASS">
+      <class name="restassured.gorestapi.client.UpdateUser">
+        <test-method signature="updateUserDetails()[pri:0, instance:restassured.gorestapi.client.UpdateUser@2438dcd]" started-at="2025-07-29T12:25:12 IST" name="updateUserDetails" finished-at="2025-07-29T12:25:13 IST" duration-ms="1007" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpBaseUrl -->
-        <test-method signature="creatNewUser()[pri:0, instance:restassured.gorestapi.client.CreateUser@1a5a4e19]" started-at="2025-07-29T11:18:34 IST" name="creatNewUser" finished-at="2025-07-29T11:18:35 IST" duration-ms="1049" status="PASS">
+        </test-method> <!-- updateUserDetails -->
+      </class> <!-- restassured.gorestapi.client.UpdateUser -->
+      <class name="restassured.gorestapi.client.CreateUser">
+        <test-method signature="creatNewUser()[pri:0, instance:restassured.gorestapi.client.CreateUser@7975d1d8]" started-at="2025-07-29T12:25:11 IST" name="creatNewUser" finished-at="2025-07-29T12:25:12 IST" duration-ms="725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatNewUser -->

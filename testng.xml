@@ -10,6 +10,7 @@
 			<class name="restassured.gorestapi.client.GetUsers" />
 			<class name="restassured.gorestapi.client.GetUser" />
 			<class name="restassured.gorestapi.client.CreateUser" />
+			<class name="restassured.gorestapi.client.UpdateUser" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

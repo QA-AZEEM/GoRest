@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,6 +114,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="restassured.gorestapi.client.GetUsers" class="method navigator-link" hash-for-method="getUserList">getUserList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="restassured.gorestapi.client.UpdateUser" class="method navigator-link" hash-for-method="updateUserDetails">updateUserDetails</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -173,6 +178,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">restassured.gorestapi.client.UpdateUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUserDetails">
+                  </a> <!-- updateUserDetails -->
+                  <span class="method-name">updateUserDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -191,6 +211,7 @@
       &lt;class name=&quot;restassured.gorestapi.client.GetUsers&quot;/&gt;
       &lt;class name=&quot;restassured.gorestapi.client.GetUser&quot;/&gt;
       &lt;class name=&quot;restassured.gorestapi.client.CreateUser&quot;/&gt;
+      &lt;class name=&quot;restassured.gorestapi.client.UpdateUser&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -204,7 +225,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (3 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -230,19 +251,23 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'getUserList')
-data.setCell(0, 2, 'restassured.gorestapi.client.GetUsers')
-data.setCell(0, 3, 2691);
+data.setCell(0, 1, 'getUserDetails')
+data.setCell(0, 2, 'restassured.gorestapi.client.GetUser')
+data.setCell(0, 3, 2302);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'getUserDetails')
-data.setCell(1, 2, 'restassured.gorestapi.client.GetUser')
-data.setCell(1, 3, 2217);
+data.setCell(1, 1, 'getUserList')
+data.setCell(1, 2, 'restassured.gorestapi.client.GetUsers')
+data.setCell(1, 3, 1940);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'creatNewUser')
-data.setCell(2, 2, 'restassured.gorestapi.client.CreateUser')
-data.setCell(2, 3, 1049);
+data.setCell(2, 1, 'updateUserDetails')
+data.setCell(2, 2, 'restassured.gorestapi.client.UpdateUser')
+data.setCell(2, 3, 1007);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'creatNewUser')
+data.setCell(3, 2, 'restassured.gorestapi.client.CreateUser')
+data.setCell(3, 3, 725);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -262,9 +287,30 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">restassured.gorestapi.client.GetUser</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpBaseUrl</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">restassured.gorestapi.client.CreateUser</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpBaseUrl</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">restassured.gorestapi.client.UpdateUser</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpBaseUrl</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -274,35 +320,34 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">restassured.gorestapi.client.GetUsers</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="configuration-suite before">
                 <span class="method-name">setUpBaseUrl</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">getUserList</span>
-                <span class="method-start">223 ms</span>
+                <span class="method-start">234 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">restassured.gorestapi.client.GetUser</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getUserDetails</span>
-                <span class="method-start">2921 ms</span>
+                <span class="method-start">2185 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpBaseUrl</span>
-                <span class="method-start">2921 ms</span>
-              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">restassured.gorestapi.client.CreateUser</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUpBaseUrl</span>
-                <span class="method-start">5141 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">creatNewUser</span>
-                <span class="method-start">5142 ms</span>
+                <span class="method-start">4488 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">restassured.gorestapi.client.UpdateUser</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">updateUserDetails</span>
+                <span class="method-start">5215 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
