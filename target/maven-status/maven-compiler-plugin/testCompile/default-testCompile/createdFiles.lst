@@ -1,2 +1,6 @@
-restassured\gorestapi\BaseAPI.class
 restassured\gorestapi\client\CreateUser.class
+restassured\gorestapi\client\GetUsers.class
+restassured\gorestapi\client\GetUser.class
+restassured\gorestapi\extentlistner\ExtentTestListners.class
+restassured\gorestapi\BaseAPI.class
+restassured\gorestapi\client\GetUsers$1.class

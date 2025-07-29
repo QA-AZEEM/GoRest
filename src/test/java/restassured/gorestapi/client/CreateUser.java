@@ -8,8 +8,11 @@ import static org.testng.Assert.assertTrue;
 
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
+
 import io.restassured.response.Response;
 import restassured.gorestapi.BaseAPI;
+import restassured.gorestapi.extentlistner.ExtentTestListners;
 import restassured.gorestapi.model.User;
 import restassured.gorestapi.util.Config;
 import restassured.gorestapi.util.TestDataGenerator;
@@ -22,6 +25,7 @@ public class CreateUser extends BaseAPI {
 	public static int id;
 	@Test
 	public void creatNewUser() {
+		ExtentTest test = ExtentTestListners.getTest();
 		TestDataGenerator dataGenerator = new TestDataGenerator();
 		String name = dataGenerator.getName();
 		String email = dataGenerator.getEmail();
@@ -38,11 +42,14 @@ public class CreateUser extends BaseAPI {
 				.response();
 		
 		String responseBody = response.asPrettyString();
+		test.info("response: \n" + responseBody);
 		System.out.println(responseBody);
 		User userResponseData = response.as(User.class);
 		id = userResponseData.getId();
 		assertNotNull(userResponseData.getId(),"user id should not be null");
+		test.pass("User id not null");
 		assertEquals(userResponseData.getStatus(), "active", "User status missmatch");
+		test.pass("User status is active");
 				
 	}
 }

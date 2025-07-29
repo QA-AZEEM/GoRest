@@ -11,6 +11,7 @@ import java.util.List;
 
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -18,8 +19,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import io.restassured.response.Response;
 import restassured.gorestapi.BaseAPI;
+import restassured.gorestapi.extentlistner.ExtentTestListners;
 import restassured.gorestapi.model.User;
 import restassured.gorestapi.util.Config;
+
+
 
 public class GetUsers extends BaseAPI {
 	
@@ -27,7 +31,7 @@ public class GetUsers extends BaseAPI {
 	
 	@Test
 	public void getUserList() {
-		
+		ExtentTest test = ExtentTestListners.getTest();
 		Response response = given()
 				.header("Authorization","Bearer " + token)
 				.header("Content-Type","application/json")

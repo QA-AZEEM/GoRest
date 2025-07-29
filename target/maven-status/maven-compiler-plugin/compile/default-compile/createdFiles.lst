@@ -1,3 +1,5 @@
+restassured\gorestapi\util\TestDataGenerator.class
 restassured\gorestapi\App.class
+restassured\gorestapi\util\ExtentManager.class
 restassured\gorestapi\util\Config.class
 restassured\gorestapi\model\User.class
